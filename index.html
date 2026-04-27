@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Bereken je netto inkomen als zzp'er. Inclusief BTW, inkomstenbelasting en arbeidskorting 2026.">
+<meta name="keywords" content="belasting calculator freelancer, zzp belasting 2026, netto inkomen berekenen nederland">
+<meta property="og:title" content="Belasting Calculator Freelancer Nederland 2026">
+<meta property="og:description" content="Bereken je netto inkomen als zzp'er. Inclusief BTW, inkomstenbelasting en arbeidskorting 2026.">
+<meta name="robots" content="index,follow">
+<title>Belasting Calculator Freelancer Nederland 2026</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5382997898313669" crossorigin="anonymous"></script>
+<style>
+:root{--p:#2563eb;--d:#1e40af;--bg:#f8fafc;--card:#fff;--t:#1e293b;--s:#64748b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--t)}
+header{background:var(--p);color:#fff;padding:1.2rem 1rem;text-align:center}
+header h1{font-size:1.5rem;font-weight:700}
+header p{opacity:.85;font-size:.9rem;margin-top:.3rem}
+.container{max-width:720px;margin:2rem auto;padding:0 1rem}
+.card{background:var(--card);border-radius:12px;padding:1.5rem;
+      box-shadow:0 2px 12px rgba(0,0,0,.08);margin-bottom:1.5rem}
+.card h2{color:var(--p);font-size:1.2rem;margin-bottom:1rem;border-bottom:2px solid var(--p);padding-bottom:.5rem}
+label{display:block;font-size:.85rem;color:var(--s);margin:.8rem 0 .3rem}
+input,select{width:100%;padding:.7rem;border:1.5px solid #e2e8f0;border-radius:8px;
+             font-size:1rem;transition:border .2s}
+input:focus,select:focus{outline:none;border-color:var(--p)}
+button{width:100%;padding:.8rem;background:var(--p);color:#fff;border:none;
+       border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;margin-top:1rem;
+       transition:background .2s}
+button:hover{background:var(--d)}
+.result{background:#eff6ff;border-left:4px solid var(--p);border-radius:0 8px 8px 0;
+        padding:1rem;margin-top:1rem;display:none}
+.result.show{display:block}
+.result .big{font-size:1.8rem;font-weight:700;color:var(--p)}
+.result .label{font-size:.8rem;color:var(--s);margin-top:.2rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.ads{text-align:center;margin:1rem 0}
+footer{text-align:center;padding:2rem 1rem;color:var(--s);font-size:.8rem}
+@media(max-width:480px){.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1>🇳🇱 Belasting Calculator Freelancer Nederland 2026</h1>
+  <p>Bereken je netto inkomen als zzp'er. Inclusief BTW, inkomstenbelasting en arbeidskorting 2026.</p>
+  <div style="margin-top:.8rem"><a href="#zzp" style="color:#fff;margin:0 .5rem;font-size:.85rem">ZZP</a><a href="#btw" style="color:#fff;margin:0 .5rem;font-size:.85rem">BTW</a><a href="#loan" style="color:#fff;margin:0 .5rem;font-size:.85rem">Hypotheek</a></div>
+</header>
+<div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+<div class="container">
+
+    <div class="card" id="zzp">
+      <h2>ZZP Netto Inkomen Calculator 2026</h2>
+      
+<label>Bruto jaarinkomen (€)</label>
+<input type="number" id="gross" placeholder="60000" min="0">
+<label>Mkb-winstvrijstelling (%)</label>
+<input type="number" id="mkb" value="12.7" min="0" max="100">
+<label>Zelfstandigenaftrek (€)</label>
+<input type="number" id="za" value="3750" min="0">
+<button onclick="calcZzp()">Bereken netto inkomen</button>
+<div class="result" id="res_zzp">
+  <div class="big" id="netto">€ —</div>
+  <div class="label">Netto jaarinkomen (schatting)</div>
+  <div style="margin-top:.8rem;font-size:.85rem;color:#64748b" id="breakdown_zzp"></div>
+</div>
+<script>
+function calcZzp(){
+  const g=parseFloat(document.getElementById('gross').value)||0;
+  const mkb=parseFloat(document.getElementById('mkb').value)/100;
+  const za=parseFloat(document.getElementById('za').value)||0;
+  const winst=g*(1-mkb)-za;
+  const basis=Math.max(winst,0);
+  let tax=0;
+  if(basis<=38441) tax=basis*0.3697;
+  else tax=38441*0.3697+(basis-38441)*0.495;
+  const arbeids=basis<23201?basis*0.0823:basis<37691?1909-(basis-23201)*0.0251:0;
+  const alg=basis<24813?basis*0.0757:basis<75518?1879-(basis-24813)*0.0368:0;
+  const kor=arbeids+alg;
+  const netto=Math.round(g-Math.max(tax-kor,0));
+  const maand=Math.round(netto/12);
+  document.getElementById('netto').textContent='€ '+netto.toLocaleString('nl-NL');
+  document.getElementById('breakdown_zzp').innerHTML=
+    'Belasting (voor kortingen): €'+Math.round(tax).toLocaleString('nl-NL')+
+    ' · Kortingen: €'+Math.round(kor).toLocaleString('nl-NL')+
+    ' · Per maand: €'+maand.toLocaleString('nl-NL');
+  document.getElementById('res_zzp').className='result show';
+}
+</script>
+    </div>
+    <div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+    <div class="card" id="btw">
+      <h2>BTW Calculator Nederland</h2>
+      
+<div class="row">
+<div>
+<label>Bedrag (€)</label>
+<input type="number" id="amount_btw" placeholder="1000" min="0">
+</div>
+<div>
+<label>BTW tarief</label>
+<select id="btw_rate">
+  <option value="21">21% (standaard)</option>
+  <option value="9">9% (laag tarief)</option>
+  <option value="0">0% (vrijgesteld)</option>
+</select>
+</div>
+</div>
+<label>Berekening</label>
+<select id="btw_dir">
+  <option value="ex">Excl. BTW → Incl. BTW</option>
+  <option value="in">Incl. BTW → Excl. BTW</option>
+</select>
+<button onclick="calcBtw()">Bereken BTW</button>
+<div class="result" id="res_btw">
+  <div class="big" id="btw_result">€ —</div>
+  <div class="label" id="btw_label">—</div>
+  <div style="margin-top:.5rem;font-size:.85rem;color:#64748b" id="btw_detail"></div>
+</div>
+<script>
+function calcBtw(){
+  const a=parseFloat(document.getElementById('amount_btw').value)||0;
+  const r=parseFloat(document.getElementById('btw_rate').value)/100;
+  const d=document.getElementById('btw_dir').value;
+  let excl,incl,btwamt;
+  if(d==='ex'){excl=a;btwamt=a*r;incl=a+btwamt;}
+  else{incl=a;excl=a/(1+r);btwamt=incl-excl;}
+  const f=v=>'€ '+v.toFixed(2).replace('.',',');
+  document.getElementById('btw_result').textContent=d==='ex'?f(incl):f(excl);
+  document.getElementById('btw_label').textContent=d==='ex'?'Incl. BTW':'Excl. BTW';
+  document.getElementById('btw_detail').innerHTML=
+    'Excl: '+f(excl)+' · BTW: '+f(btwamt)+' · Incl: '+f(incl);
+  document.getElementById('res_btw').className='result show';
+}
+</script>
+    </div>
+    <div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+    <div class="card" id="loan">
+      <h2>Hypotheek Maandlasten Calculator</h2>
+      
+<div class="row">
+<div>
+<label>Leenbedrag (€)</label>
+<input type="number" id="loan_a" placeholder="300000" min="0">
+</div>
+<div>
+<label>Rente per jaar (%)</label>
+<input type="number" id="loan_r" value="4.2" step="0.1" min="0">
+</div>
+</div>
+<label>Looptijd (jaren)</label>
+<input type="number" id="loan_y" value="30" min="1" max="40">
+<button onclick="calcLoan()">Bereken maandlasten</button>
+<div class="result" id="res_loan">
+  <div class="big" id="loan_monthly">€ —</div>
+  <div class="label">Per maand (annuïtair)</div>
+  <div style="margin-top:.5rem;font-size:.85rem;color:#64748b" id="loan_detail"></div>
+</div>
+<script>
+function calcLoan(){
+  const p=parseFloat(document.getElementById('loan_a').value)||0;
+  const r=parseFloat(document.getElementById('loan_r').value)/100/12;
+  const n=parseFloat(document.getElementById('loan_y').value)*12;
+  if(r===0){
+    const m=p/n;
+    document.getElementById('loan_monthly').textContent='€ '+m.toFixed(2).replace('.',',');
+    document.getElementById('loan_detail').textContent='Totaal terug: € '+(p).toLocaleString('nl-NL');
+    document.getElementById('res_loan').className='result show';
+    return;
+  }
+  const m=p*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);
+  const total=m*n;
+  const interest=total-p;
+  const f=v=>'€ '+Math.round(v).toLocaleString('nl-NL');
+  document.getElementById('loan_monthly').textContent='€ '+m.toFixed(2).replace('.',',');
+  document.getElementById('loan_detail').innerHTML=
+    'Totale rente: '+f(interest)+' · Totaal terug: '+f(total);
+  document.getElementById('res_loan').className='result show';
+}
+</script>
+    </div>
+    <div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+  <div class="card" style="background:#eff6ff;border:1.5px solid #bfdbfe">
+    <h2 style="color:#1d4ed8">ℹ️ Over deze calculator</h2>
+    <p style="font-size:.9rem;color:#475569;line-height:1.6">
+      Deze tool geeft een schatting op basis van de regels van 2026.
+      Raadpleeg altijd een belastingadviseur voor definitieve berekeningen.
+      Laatste update: 2026-04-27.
+    </p>
+  </div>
+</div>
+<div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+<footer>
+  <p>© 2026 Belasting Calculator Freelancer Nederland 2026 · Alle berekeningen zijn indicatief</p>
+  <p style="margin-top:.3rem;font-size:.75rem">
+    Niet bedoeld als juridisch of fiscaal advies
+  </p>
+</footer>
+</body>
+</html>
