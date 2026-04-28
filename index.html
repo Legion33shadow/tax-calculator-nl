@@ -3,502 +3,221 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Bereken je netto inkomen als ZZP'er in Nederland 2026. Inclusief inkomstenbelasting, MKB-winstvrijstelling, zelfstandigenaftrek en BTW calculator. Gratis en direct.">
-<meta name="keywords" content="zzp belasting calculator 2026, netto inkomen berekenen freelancer, belasting zzp nederland, zelfstandigenaftrek 2026, mkb winstvrijstelling berekenen, btw calculator nederland, hypotheek calculator nederland, zzp pensioen berekening">
-<meta property="og:title" content="ZZP Belasting Calculator Nederland 2026 — Gratis & Direct">
-<meta property="og:description" content="Bereken direct je netto inkomen als ZZP'er. Inclusief alle aftrekposten 2026.">
-<meta property="og:type" content="website">
+<meta name="description" content="Bereken je netto inkomen als zzp'er. Inclusief BTW, inkomstenbelasting en arbeidskorting 2026.">
+<meta name="keywords" content="belasting calculator freelancer, zzp belasting 2026, netto inkomen berekenen nederland">
+<meta property="og:title" content="Belasting Calculator Freelancer Nederland 2026">
+<meta property="og:description" content="Bereken je netto inkomen als zzp'er. Inclusief BTW, inkomstenbelasting en arbeidskorting 2026.">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://legion33shadow.github.io/tax-calculator-nl/">
-<title>ZZP Belasting Calculator Nederland 2026 — Netto Inkomen Berekenen</title>
+<title>Belasting Calculator Freelancer Nederland 2026</title>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5382997898313669" crossorigin="anonymous"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "ZZP Belasting Calculator Nederland 2026", "url": "https://legion33shadow.github.io/tax-calculator-nl/", "description": "Bereken je netto inkomen als ZZP'er in Nederland. Inclusief inkomstenbelasting, arbeidskorting en BTW 2026.", "applicationCategory": "FinanceApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "inLanguage": "nl", "dateModified": "2026-04-27"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Hoeveel belasting betaal ik als ZZP'er in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Als ZZP'er betaal je inkomstenbelasting over je winst na aftrekposten. Tot €38.441 betaal je 36,97%, daarboven 49,5%. Met zelfstandigenaftrek (€3.750) en MKB-winstvrijstelling (12,7%) betaal je effectief minder."}}, {"@type": "Question", "name": "Wat is de zelfstandigenaftrek in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "De zelfstandigenaftrek in 2026 bedraagt €3.750. Je kunt dit bedrag aftrekken van je winst als je meer dan 1.225 uur per jaar aan je onderneming werkt (urencriterium)."}}, {"@type": "Question", "name": "Hoeveel BTW moet ik afdragen als ZZP'er?", "acceptedAnswer": {"@type": "Answer", "text": "Als ZZP'er reken je 21% BTW (standaardtarief) of 9% (laag tarief voor bepaalde diensten). Je draagt de ontvangen BTW per kwartaal af aan de Belastingdienst via de aangifte omzetbelasting."}}, {"@type": "Question", "name": "Wat is de MKB-winstvrijstelling?", "acceptedAnswer": {"@type": "Answer", "text": "De MKB-winstvrijstelling is 12,7% van je winst na zelfstandigenaftrek. Dit bedrag hoef je niet te belasten. Het is automatisch van toepassing als je ondernemer bent voor de inkomstenbelasting."}}, {"@type": "Question", "name": "Moet ik als ZZP'er pensioen opbouwen?", "acceptedAnswer": {"@type": "Answer", "text": "Als ZZP'er bouw je geen automatisch pensioen op via een werkgever. Je bent zelf verantwoordelijk. Opties zijn: lijfrente, banksparen, beleggen of een vrijwillig pensioenregeling via een beroepsvereniging."}}]}</script>
 <style>
 :root{--p:#2563eb;--d:#1e40af;--bg:#f8fafc;--card:#fff;--t:#1e293b;--s:#64748b}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--t);line-height:1.7}
-header{background:linear-gradient(135deg,#1e40af,#2563eb);color:#fff;padding:2rem 1rem;text-align:center}
-header h1{font-size:1.6rem;font-weight:800;margin-bottom:.4rem}
-header p{opacity:.9;font-size:.95rem;max-width:600px;margin:0 auto}
-nav.crumb{background:#fff;padding:.5rem 1rem;font-size:.8rem;color:var(--s);
-           border-bottom:1px solid #e2e8f0}
-nav.crumb a{color:var(--p);text-decoration:none}
-.container{max-width:780px;margin:0 auto;padding:1rem}
-.card{background:var(--card);border-radius:14px;padding:1.6rem;
-      box-shadow:0 2px 16px rgba(0,0,0,.07);margin-bottom:1.5rem}
-.card h2{color:var(--p);font-size:1.15rem;font-weight:700;
-         margin-bottom:1rem;border-bottom:2px solid #bfdbfe;padding-bottom:.5rem}
-.card h3{color:var(--d);font-size:1rem;font-weight:600;margin:1rem 0 .4rem}
-.card p{color:#475569;font-size:.92rem;margin-bottom:.7rem}
-.card ul{padding-left:1.2rem;color:#475569;font-size:.92rem}
-.card ul li{margin-bottom:.4rem}
-label{display:block;font-size:.83rem;color:var(--s);margin:.8rem 0 .3rem;font-weight:500}
-input,select{width:100%;padding:.75rem;border:1.5px solid #e2e8f0;border-radius:9px;
-             font-size:.97rem;transition:border .2s;background:#fff}
-input:focus,select:focus{outline:none;border-color:var(--p);box-shadow:0 0 0 3px #dbeafe}
-input[readonly]{background:#f1f5f9;color:var(--s)}
-button{width:100%;padding:.85rem;background:var(--p);color:#fff;border:none;
-       border-radius:9px;font-size:1rem;font-weight:700;cursor:pointer;margin-top:1rem;
-       transition:all .2s;letter-spacing:.02em}
-button:hover{background:var(--d);transform:translateY(-1px);box-shadow:0 4px 12px rgba(37,99,235,.3)}
-.result{background:#eff6ff;border-left:4px solid var(--p);border-radius:0 10px 10px 0;
-        padding:1.1rem;margin-top:1rem;display:none}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--t)}
+header{background:var(--p);color:#fff;padding:1.2rem 1rem;text-align:center}
+header h1{font-size:1.5rem;font-weight:700}
+header p{opacity:.85;font-size:.9rem;margin-top:.3rem}
+.container{max-width:720px;margin:2rem auto;padding:0 1rem}
+.card{background:var(--card);border-radius:12px;padding:1.5rem;
+      box-shadow:0 2px 12px rgba(0,0,0,.08);margin-bottom:1.5rem}
+.card h2{color:var(--p);font-size:1.2rem;margin-bottom:1rem;border-bottom:2px solid var(--p);padding-bottom:.5rem}
+label{display:block;font-size:.85rem;color:var(--s);margin:.8rem 0 .3rem}
+input,select{width:100%;padding:.7rem;border:1.5px solid #e2e8f0;border-radius:8px;
+             font-size:1rem;transition:border .2s}
+input:focus,select:focus{outline:none;border-color:var(--p)}
+button{width:100%;padding:.8rem;background:var(--p);color:#fff;border:none;
+       border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;margin-top:1rem;
+       transition:background .2s}
+button:hover{background:var(--d)}
+.result{background:#eff6ff;border-left:4px solid var(--p);border-radius:0 8px 8px 0;
+        padding:1rem;margin-top:1rem;display:none}
 .result.show{display:block}
-.result .big{font-size:2rem;font-weight:800;color:var(--p)}
-.result .lbl{font-size:.8rem;color:var(--s);margin-top:.2rem}
-.result .break{font-size:.83rem;color:#475569;margin-top:.7rem;
-               background:#fff;padding:.6rem;border-radius:7px}
+.result .big{font-size:1.8rem;font-weight:700;color:var(--p)}
+.result .label{font-size:.8rem;color:var(--s);margin-top:.2rem}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.ads{text-align:center;margin:1.2rem 0}
-.faq-item{border-bottom:1px solid #e2e8f0;padding:.9rem 0}
-.faq-item:last-child{border-bottom:none}
-.faq-q{font-weight:600;color:var(--t);cursor:pointer;font-size:.95rem;
-        display:flex;justify-content:space-between;align-items:center}
-.faq-q::after{content:"＋";color:var(--p);font-size:1.1rem;transition:.2s}
-.faq-item.open .faq-q::after{content:"－"}
-.faq-a{display:none;padding-top:.6rem;color:#475569;font-size:.9rem}
-.faq-item.open .faq-a{display:block}
-.example-table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:.8rem}
-.example-table th{background:#dbeafe;color:var(--d);padding:.5rem .8rem;text-align:left}
-.example-table td{padding:.45rem .8rem;border-bottom:1px solid #e2e8f0}
-.example-table tr:last-child td{border-bottom:none}
-.badge{display:inline-block;background:#dbeafe;color:var(--d);padding:.15rem .5rem;
-       border-radius:4px;font-size:.75rem;font-weight:600;margin-left:.4rem}
-.tip-box{background:#f0fdf4;border-left:4px solid #22c55e;border-radius:0 8px 8px 0;
-         padding:.9rem 1rem;margin:.8rem 0;font-size:.88rem;color:#166534}
-footer{text-align:center;padding:2.5rem 1rem;color:var(--s);font-size:.8rem;
-       border-top:1px solid #e2e8f0;margin-top:2rem}
-@media(max-width:520px){.row{grid-template-columns:1fr}header h1{font-size:1.25rem}}
+.ads{text-align:center;margin:1rem 0}
+footer{text-align:center;padding:2rem 1rem;color:var(--s);font-size:.8rem}
+@media(max-width:480px){.row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-
 <header>
-  <div style="font-size:.8rem;opacity:.7;margin-bottom:.5rem">
-    🇳🇱 Bijgewerkt voor belastingjaar 2026
-  </div>
-  <h1>🧮 ZZP Belasting Calculator Nederland 2026</h1>
-  <p>Bereken in seconden je netto inkomen als freelancer of ZZP'er.<br>
-  Inclusief zelfstandigenaftrek, MKB-winstvrijstelling en arbeidskorting.</p>
+  <h1>🇳🇱 Belasting Calculator Freelancer Nederland 2026</h1>
+  <p>Bereken je netto inkomen als zzp'er. Inclusief BTW, inkomstenbelasting en arbeidskorting 2026.</p>
+  <div style="margin-top:.8rem"><a href="#zzp" style="color:#fff;margin:0 .5rem;font-size:.85rem">ZZP</a><a href="#btw" style="color:#fff;margin:0 .5rem;font-size:.85rem">BTW</a><a href="#loan" style="color:#fff;margin:0 .5rem;font-size:.85rem">Hypotheek</a></div>
 </header>
-
-<nav class="crumb">
-  <a href="/">Home</a> › ZZP Belasting Calculator › Nederland 2026
-</nav>
-
 <div class="ads">
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
- data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
 </div>
-
 <div class="container">
 
-<!-- ── TOOL 1 : ZZP CALCULATOR ─────────────────────────── -->
-<div class="card" id="zzp-calculator">
-  <h2>💶 ZZP Netto Inkomen Calculator 2026 <span class="badge">Bijgewerkt</span></h2>
-
-  <label>Bruto jaarinkomen (€)</label>
-  <input type="number" id="gross" placeholder="60.000" min="0" inputmode="numeric">
-
-  <div class="row">
-    <div>
-      <label>MKB-winstvrijstelling</label>
-      <input type="number" id="mkb" value="12.7" min="0" max="100" step="0.1">
-    </div>
-    <div>
-      <label>Zelfstandigenaftrek (€)</label>
-      <input type="number" id="za" value="3750" min="0">
-    </div>
-  </div>
-
-  <div class="tip-box">
-    💡 <strong>Urencriterium:</strong> zelfstandigenaftrek geldt alleen als je
-    minimaal 1.225 uur/jaar aan je bedrijf besteedt.
-  </div>
-
-  <button onclick="calcZzp()">▶ Bereken mijn netto inkomen</button>
-
-  <div class="result" id="res_zzp">
-    <div class="big" id="netto">€ —</div>
-    <div class="lbl">Netto jaarinkomen (schatting 2026)</div>
-    <div class="break" id="breakdown_zzp"></div>
-  </div>
+    <div class="card" id="zzp">
+      <h2>ZZP Netto Inkomen Calculator 2026</h2>
+      
+<label>Bruto jaarinkomen (€)</label>
+<input type="number" id="gross" placeholder="60000" min="0">
+<label>Mkb-winstvrijstelling (%)</label>
+<input type="number" id="mkb" value="12.7" min="0" max="100">
+<label>Zelfstandigenaftrek (€)</label>
+<input type="number" id="za" value="3750" min="0">
+<button onclick="calcZzp()">Bereken netto inkomen</button>
+<div class="result" id="res_zzp">
+  <div class="big" id="netto">€ —</div>
+  <div class="label">Netto jaarinkomen (schatting)</div>
+  <div style="margin-top:.8rem;font-size:.85rem;color:#64748b" id="breakdown_zzp"></div>
 </div>
-
-<div class="ads">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
- data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-</div>
-
-<!-- ── TOOL 2 : BTW CALCULATOR ─────────────────────────── -->
-<div class="card" id="btw-calculator">
-  <h2>🧾 BTW Calculator Nederland</h2>
-
-  <div class="row">
-    <div>
-      <label>Bedrag (€)</label>
-      <input type="number" id="amount_btw" placeholder="1.000" min="0">
-    </div>
-    <div>
-      <label>BTW tarief</label>
-      <select id="btw_rate">
-        <option value="21">21% — standaard</option>
-        <option value="9">9% — laag tarief</option>
-        <option value="0">0% — vrijgesteld</option>
-      </select>
-    </div>
-  </div>
-
-  <label>Richting</label>
-  <select id="btw_dir">
-    <option value="ex">Excl. BTW → Incl. BTW</option>
-    <option value="in">Incl. BTW → Excl. BTW</option>
-  </select>
-
-  <button onclick="calcBtw()">▶ Bereken BTW</button>
-
-  <div class="result" id="res_btw">
-    <div class="big" id="btw_result">€ —</div>
-    <div class="lbl" id="btw_label">—</div>
-    <div class="break" id="btw_detail"></div>
-  </div>
-</div>
-
-<div class="ads">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
- data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-</div>
-
-<!-- ── TOOL 3 : HYPOTHEEK CALCULATOR ──────────────────── -->
-<div class="card" id="hypotheek-calculator">
-  <h2>🏠 Hypotheek Maandlasten Calculator</h2>
-
-  <div class="row">
-    <div>
-      <label>Leenbedrag (€)</label>
-      <input type="number" id="loan_a" placeholder="300.000" min="0">
-    </div>
-    <div>
-      <label>Rente per jaar (%)</label>
-      <input type="number" id="loan_r" value="4.2" step="0.1" min="0">
-    </div>
-  </div>
-
-  <label>Looptijd (jaren)</label>
-  <select id="loan_y">
-    <option value="10">10 jaar</option>
-    <option value="20">20 jaar</option>
-    <option value="25">25 jaar</option>
-    <option value="30" selected>30 jaar</option>
-  </select>
-
-  <button onclick="calcLoan()">▶ Bereken maandlasten</button>
-
-  <div class="result" id="res_loan">
-    <div class="big" id="loan_monthly">€ —</div>
-    <div class="lbl">Per maand (annuïtaire berekening)</div>
-    <div class="break" id="loan_detail"></div>
-  </div>
-</div>
-
-<div class="ads">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
- data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-</div>
-
-<!-- ── UITLEG ZZP BELASTING ────────────────────────────── -->
-<div class="card">
-  <h2>📘 Hoe werkt belasting voor ZZP in Nederland 2026?</h2>
-
-  <p>Als <strong>freelancer of ZZP'er</strong> ben je in Nederland ondernemer
-  voor de inkomstenbelasting. Je betaalt belasting over je <em>winst</em>,
-  niet over je omzet. Dat onderscheid is cruciaal — en vaak misunderstood.</p>
-
-  <h3>De 3 stappen van je belastingberekening</h3>
-
-  <p><strong>Stap 1 — Omzet minus kosten = winst</strong><br>
-  Van je totale inkomsten trek je alle zakelijke kosten af:
-  kantoor, materiaal, software, kilometers, cursussen. Wat overblijft is je winst.</p>
-
-  <p><strong>Stap 2 — Pas de aftrekposten toe</strong><br>
-  Als ZZP'er heb je recht op twee grote aftrekposten in 2026:</p>
-
-  <ul>
-    <li><strong>Zelfstandigenaftrek: €3.750</strong> (als je ≥ 1.225 uur/jaar werkt)</li>
-    <li><strong>MKB-winstvrijstelling: 12,7%</strong> van de winst na zelfstandigenaftrek</li>
-  </ul>
-
-  <p><strong>Stap 3 — Bereken de inkomstenbelasting</strong><br>
-  Over je belastbaar inkomen betaal je:</p>
-
-  <table class="example-table">
-    <tr><th>Schijf 2026</th><th>Tarief</th></tr>
-    <tr><td>Tot € 38.441</td><td>36,97%</td></tr>
-    <tr><td>Boven € 38.441</td><td>49,50%</td></tr>
-  </table>
-
-  <p style="margin-top:.8rem">Van de berekende belasting trek je nog
-  <strong>heffingskortingen</strong> af (arbeidskorting + algemene heffingskorting),
-  wat je effectieve tarief verder verlaagt.</p>
-
-  <h3>Praktisch voorbeeld 2026</h3>
-
-  <p>Stel: je verdient <strong>€ 70.000 omzet</strong> en maakt € 8.000 kosten.
-  Dan is je winst € 62.000.</p>
-
-  <table class="example-table">
-    <tr><th>Berekening</th><th>Bedrag</th></tr>
-    <tr><td>Winst</td><td>€ 62.000</td></tr>
-    <tr><td>Zelfstandigenaftrek</td><td>− € 3.750</td></tr>
-    <tr><td>MKB-winstvrijstelling (12,7%)</td><td>− € 7.380</td></tr>
-    <tr><td><strong>Belastbaar inkomen</strong></td><td><strong>€ 50.870</strong></td></tr>
-    <tr><td>Belasting (schatting)</td><td>≈ € 16.800</td></tr>
-    <tr><td>Heffingskortingen</td><td>− € 3.200</td></tr>
-    <tr><td><strong>Netto inkomen</strong></td><td><strong>≈ € 48.400 / jaar</strong></td></tr>
-  </table>
-
-  <div class="tip-box" style="margin-top:1rem">
-    ✅ <strong>Pro tip:</strong> Reserveer altijd <strong>25–30%</strong> van je
-    inkomen voor belasting. Zet dit apart op een spaarrekening.
-  </div>
-</div>
-
-<div class="ads">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
- data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-</div>
-
-<!-- ── VEELGEMAAKTE FOUTEN ─────────────────────────────── -->
-<div class="card">
-  <h2>⚠️ Veelgemaakte fouten van ZZP'ers</h2>
-
-  <h3>1. Geen belasting reserveren</h3>
-  <p>De grootste fout. Je ontvangt het volledige bedrag op je rekening,
-  maar betaalt later belasting. Maak <em>direct</em> 25-30% over naar
-  een aparte belastingspaarrekening.</p>
-
-  <h3>2. Vergeten kosten aftrekken</h3>
-  <p>Veel freelancers vergeten aftrekbare kosten: thuiswerkkamer,
-  internetabonnement (zakelijk deel), software, vakliteratuur,
-  kilometervergoeding (€ 0,23/km in 2026), cursussen en trainingen.</p>
-
-  <h3>3. Urencriterium niet bijhouden</h3>
-  <p>Voor de zelfstandigenaftrek heb je <strong>1.225 uur/jaar</strong> nodig.
-  Gebruik een tijdregistratietool (Toggl, Harvest, Clockify) en bewaar
-  je administratie minimaal 7 jaar.</p>
-
-  <h3>4. BTW te laat aangeven</h3>
-  <p>Als ZZP'er doe je <strong>elk kwartaal</strong> BTW-aangifte
-  (of maandelijks bij hoge omzet). Te laat = boete van de Belastingdienst.</p>
-
-  <h3>5. Geen pensioenopbouw</h3>
-  <p>Als zelfstandige bouw je geen automatisch pensioen op. Bekijk lijfrente,
-  banksparen of een koopsompolis als pensioenoplossing.</p>
-</div>
-
-<div class="ads">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
- data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-</div>
-
-<!-- ── FAQ ────────────────────────────────────────────── -->
-<div class="card">
-  <h2>❓ Veelgestelde vragen (FAQ)</h2>
-
-  <div class="faq-item">
-    <div class="faq-q" onclick="toggleFaq(this)">
-      Hoeveel belasting betaal ik als ZZP'er in 2026?
-    </div>
-    <div class="faq-a">
-      Als ZZP'er betaal je inkomstenbelasting over je winst na aftrekposten.
-      Tot € 38.441 betaal je 36,97%, daarboven 49,5%. Dankzij de zelfstandigenaftrek
-      (€ 3.750) en MKB-winstvrijstelling (12,7%) is je effectieve tarief meestal
-      tussen 15% en 30% van je omzet.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-q" onclick="toggleFaq(this)">
-      Wat is de zelfstandigenaftrek in 2026?
-    </div>
-    <div class="faq-a">
-      De zelfstandigenaftrek bedraagt <strong>€ 3.750</strong> in 2026.
-      Je mag dit bedrag aftrekken van je winst, mits je het urencriterium
-      van 1.225 uur/jaar haalt. De aftrek daalt elk jaar lichtjes.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-q" onclick="toggleFaq(this)">
-      Hoe werkt de MKB-winstvrijstelling?
-    </div>
-    <div class="faq-a">
-      De MKB-winstvrijstelling is <strong>12,7%</strong> van je winst
-      ná aftrek van de zelfstandigenaftrek. Dit percentage hoef je
-      niet te belasten. Het geldt automatisch als je ondernemer bent
-      voor de inkomstenbelasting — je hoeft er niets voor aan te vragen.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-q" onclick="toggleFaq(this)">
-      Moet ik als ZZP'er BTW betalen?
-    </div>
-    <div class="faq-a">
-      Ja, in de meeste gevallen. Je rekent 21% of 9% BTW op je facturen
-      en draagt dit elk kwartaal af via de aangifte omzetbelasting.
-      De BTW die je zelf betaalt aan leveranciers, mag je aftrekken
-      als voorbelasting. Heb je een omzet onder € 20.000/jaar?
-      Dan kom je mogelijk in aanmerking voor de Kleineondernemersregeling (KOR).
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-q" onclick="toggleFaq(this)">
-      Wat is de KOR (Kleineondernemersregeling)?
-    </div>
-    <div class="faq-a">
-      Als je jaaromzet onder <strong>€ 20.000</strong> blijft, kun je
-      kiezen voor de KOR. Je rekent dan géén BTW aan je klanten,
-      maar mag ook geen BTW aftrekken op je inkopen. Voordeel: minder
-      administratie en geen kwartaalaangifte.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-q" onclick="toggleFaq(this)">
-      Hoe bereken ik mijn netto maandinkomen als ZZP'er?
-    </div>
-    <div class="faq-a">
-      Gebruik onze calculator hierboven. Als vuistregel: deel je
-      netto jaarinkomen door 12. Vergeet niet dat je als ZZP'er
-      zelf vakantie, ziekte en pensioen financiert — reken op
-      10-20% extra buffer bovenop je gewenste nettosalaris.
-    </div>
-  </div>
-
-</div>
-
-<div class="ads">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
- data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-</div>
-
-<!-- ── INFO BOX ───────────────────────────────────────── -->
-<div class="card" style="background:#fefce8;border:1.5px solid #fde68a">
-  <h2 style="color:#92400e">📌 Disclaimer</h2>
-  <p style="color:#78350f;font-size:.88rem">
-    Deze calculator geeft een <strong>indicatieve schatting</strong> op basis van
-    de belastingregels van 2026. Persoonlijke situaties (AOW, toeslagen,
-    hypotheekrenteaftrek) kunnen de uitkomst beïnvloeden.
-    Raadpleeg altijd een <a href="https://www.rnb.nl" style="color:#92400e">
-    belastingadviseur of accountant</a> voor definitieve berekeningen.
-    Laatste update: 2026-04-27.
-  </p>
-</div>
-
-</div><!-- end container -->
-
-<div class="ads">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
- data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-</div>
-
-<footer>
-  <p>© 2026 ZZP Belasting Calculator Nederland · Gratis online tool</p>
-  <p style="margin-top:.4rem;font-size:.75rem">
-    Niet bedoeld als juridisch of fiscaal advies · Schattingen op basis van belastingregels 2026
-  </p>
-  <p style="margin-top:.4rem">
-    <a href="#zzp-calculator" style="color:var(--p);font-size:.8rem">ZZP Calculator</a> ·
-    <a href="#btw-calculator" style="color:var(--p);font-size:.8rem">BTW Calculator</a> ·
-    <a href="#hypotheek-calculator" style="color:var(--p);font-size:.8rem">Hypotheek</a>
-  </p>
-</footer>
-
 <script>
-/* ── ZZP ── */
 function calcZzp(){
-  const g  = parseFloat(document.getElementById('gross').value) || 0;
-  const mkb= parseFloat(document.getElementById('mkb').value)   / 100;
-  const za = parseFloat(document.getElementById('za').value)    || 0;
-
-  const w1   = Math.max(g - za, 0);
-  const winst= Math.max(w1 * (1 - mkb), 0);
-  let tax = 0;
-  if (winst <= 38441) tax = winst * 0.3697;
-  else                tax = 38441 * 0.3697 + (winst - 38441) * 0.495;
-
-  const arbeids = winst < 23201 ? winst * 0.0823
-                : winst < 37691 ? 1909 - (winst - 23201) * 0.0251 : 0;
-  const alg     = winst < 24813 ? winst * 0.0757
-                : winst < 75518 ? 1879 - (winst - 24813) * 0.0368 : 0;
-  const kor    = Math.max(arbeids + alg, 0);
-  const netto  = Math.round(g - Math.max(tax - kor, 0));
-  const maand  = Math.round(netto / 12);
-  const perc   = g > 0 ? Math.round((1 - netto / g) * 100) : 0;
-
-  const f = v => '€ ' + Math.round(v).toLocaleString('nl-NL');
-  document.getElementById('netto').textContent = '€ ' + netto.toLocaleString('nl-NL');
-  document.getElementById('breakdown_zzp').innerHTML =
-    '📊 <b>Belastbare winst:</b> ' + f(winst) +
-    ' &nbsp;|&nbsp; <b>Belasting:</b> ' + f(Math.max(tax - kor, 0)) +
-    '<br>💰 <b>Per maand netto:</b> ' + f(maand) +
-    ' &nbsp;|&nbsp; <b>Effectief tarief:</b> ' + perc + '%';
-  document.getElementById('res_zzp').className = 'result show';
-}
-
-/* ── BTW ── */
-function calcBtw(){
-  const a  = parseFloat(document.getElementById('amount_btw').value) || 0;
-  const r  = parseFloat(document.getElementById('btw_rate').value)   / 100;
-  const d  = document.getElementById('btw_dir').value;
-  let excl, incl, btwamt;
-  if (d === 'ex') { excl = a; btwamt = a * r; incl = a + btwamt; }
-  else            { incl = a; excl   = a / (1 + r); btwamt = incl - excl; }
-  const f = v => '€ ' + v.toFixed(2).replace('.', ',');
-  document.getElementById('btw_result').textContent = d === 'ex' ? f(incl) : f(excl);
-  document.getElementById('btw_label').textContent  = d === 'ex' ? 'Incl. BTW' : 'Excl. BTW';
-  document.getElementById('btw_detail').innerHTML   =
-    '📋 Excl: ' + f(excl) + ' &nbsp;|&nbsp; BTW: ' + f(btwamt) + ' &nbsp;|&nbsp; Incl: ' + f(incl);
-  document.getElementById('res_btw').className = 'result show';
-}
-
-/* ── HYPOTHEEK ── */
-function calcLoan(){
-  const p = parseFloat(document.getElementById('loan_a').value) || 0;
-  const r = parseFloat(document.getElementById('loan_r').value) / 100 / 12;
-  const n = parseFloat(document.getElementById('loan_y').value) * 12;
-  if (r === 0) {
-    const m = p / n;
-    document.getElementById('loan_monthly').textContent = '€ ' + m.toFixed(2).replace('.', ',');
-    document.getElementById('loan_detail').innerHTML    = 'Totaal: € ' + Math.round(p).toLocaleString('nl-NL');
-    document.getElementById('res_loan').className = 'result show';
-    return;
-  }
-  const m     = p * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
-  const total = m * n;
-  const f     = v => '€ ' + Math.round(v).toLocaleString('nl-NL');
-  document.getElementById('loan_monthly').textContent = '€ ' + m.toFixed(2).replace('.', ',');
-  document.getElementById('loan_detail').innerHTML    =
-    '🏦 Totale rente: ' + f(total - p) + ' &nbsp;|&nbsp; Totaal terug: ' + f(total);
-  document.getElementById('res_loan').className = 'result show';
-}
-
-/* ── FAQ ── */
-function toggleFaq(el){
-  el.parentElement.classList.toggle('open');
+  const g=parseFloat(document.getElementById('gross').value)||0;
+  const mkb=parseFloat(document.getElementById('mkb').value)/100;
+  const za=parseFloat(document.getElementById('za').value)||0;
+  const winst=g*(1-mkb)-za;
+  const basis=Math.max(winst,0);
+  let tax=0;
+  if(basis<=38441) tax=basis*0.3697;
+  else tax=38441*0.3697+(basis-38441)*0.495;
+  const arbeids=basis<23201?basis*0.0823:basis<37691?1909-(basis-23201)*0.0251:0;
+  const alg=basis<24813?basis*0.0757:basis<75518?1879-(basis-24813)*0.0368:0;
+  const kor=arbeids+alg;
+  const netto=Math.round(g-Math.max(tax-kor,0));
+  const maand=Math.round(netto/12);
+  document.getElementById('netto').textContent='€ '+netto.toLocaleString('nl-NL');
+  document.getElementById('breakdown_zzp').innerHTML=
+    'Belasting (voor kortingen): €'+Math.round(tax).toLocaleString('nl-NL')+
+    ' · Kortingen: €'+Math.round(kor).toLocaleString('nl-NL')+
+    ' · Per maand: €'+maand.toLocaleString('nl-NL');
+  document.getElementById('res_zzp').className='result show';
 }
 </script>
+    </div>
+    <div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
 
+    <div class="card" id="btw">
+      <h2>BTW Calculator Nederland</h2>
+      
+<div class="row">
+<div>
+<label>Bedrag (€)</label>
+<input type="number" id="amount_btw" placeholder="1000" min="0">
+</div>
+<div>
+<label>BTW tarief</label>
+<select id="btw_rate">
+  <option value="21">21% (standaard)</option>
+  <option value="9">9% (laag tarief)</option>
+  <option value="0">0% (vrijgesteld)</option>
+</select>
+</div>
+</div>
+<label>Berekening</label>
+<select id="btw_dir">
+  <option value="ex">Excl. BTW → Incl. BTW</option>
+  <option value="in">Incl. BTW → Excl. BTW</option>
+</select>
+<button onclick="calcBtw()">Bereken BTW</button>
+<div class="result" id="res_btw">
+  <div class="big" id="btw_result">€ —</div>
+  <div class="label" id="btw_label">—</div>
+  <div style="margin-top:.5rem;font-size:.85rem;color:#64748b" id="btw_detail"></div>
+</div>
+<script>
+function calcBtw(){
+  const a=parseFloat(document.getElementById('amount_btw').value)||0;
+  const r=parseFloat(document.getElementById('btw_rate').value)/100;
+  const d=document.getElementById('btw_dir').value;
+  let excl,incl,btwamt;
+  if(d==='ex'){excl=a;btwamt=a*r;incl=a+btwamt;}
+  else{incl=a;excl=a/(1+r);btwamt=incl-excl;}
+  const f=v=>'€ '+v.toFixed(2).replace('.',',');
+  document.getElementById('btw_result').textContent=d==='ex'?f(incl):f(excl);
+  document.getElementById('btw_label').textContent=d==='ex'?'Incl. BTW':'Excl. BTW';
+  document.getElementById('btw_detail').innerHTML=
+    'Excl: '+f(excl)+' · BTW: '+f(btwamt)+' · Incl: '+f(incl);
+  document.getElementById('res_btw').className='result show';
+}
+</script>
+    </div>
+    <div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+    <div class="card" id="loan">
+      <h2>Hypotheek Maandlasten Calculator</h2>
+      
+<div class="row">
+<div>
+<label>Leenbedrag (€)</label>
+<input type="number" id="loan_a" placeholder="300000" min="0">
+</div>
+<div>
+<label>Rente per jaar (%)</label>
+<input type="number" id="loan_r" value="4.2" step="0.1" min="0">
+</div>
+</div>
+<label>Looptijd (jaren)</label>
+<input type="number" id="loan_y" value="30" min="1" max="40">
+<button onclick="calcLoan()">Bereken maandlasten</button>
+<div class="result" id="res_loan">
+  <div class="big" id="loan_monthly">€ —</div>
+  <div class="label">Per maand (annuïtair)</div>
+  <div style="margin-top:.5rem;font-size:.85rem;color:#64748b" id="loan_detail"></div>
+</div>
+<script>
+function calcLoan(){
+  const p=parseFloat(document.getElementById('loan_a').value)||0;
+  const r=parseFloat(document.getElementById('loan_r').value)/100/12;
+  const n=parseFloat(document.getElementById('loan_y').value)*12;
+  if(r===0){
+    const m=p/n;
+    document.getElementById('loan_monthly').textContent='€ '+m.toFixed(2).replace('.',',');
+    document.getElementById('loan_detail').textContent='Totaal terug: € '+(p).toLocaleString('nl-NL');
+    document.getElementById('res_loan').className='result show';
+    return;
+  }
+  const m=p*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);
+  const total=m*n;
+  const interest=total-p;
+  const f=v=>'€ '+Math.round(v).toLocaleString('nl-NL');
+  document.getElementById('loan_monthly').textContent='€ '+m.toFixed(2).replace('.',',');
+  document.getElementById('loan_detail').innerHTML=
+    'Totale rente: '+f(interest)+' · Totaal terug: '+f(total);
+  document.getElementById('res_loan').className='result show';
+}
+</script>
+    </div>
+    <div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+  <div class="card" style="background:#eff6ff;border:1.5px solid #bfdbfe">
+    <h2 style="color:#1d4ed8">ℹ️ Over deze calculator</h2>
+    <p style="font-size:.9rem;color:#475569;line-height:1.6">
+      Deze tool geeft een schatting op basis van de regels van 2026.
+      Raadpleeg altijd een belastingadviseur voor definitieve berekeningen.
+      Laatste update: 2026-04-28.
+    </p>
+  </div>
+</div>
+<div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+<footer>
+  <p>© 2026 Belasting Calculator Freelancer Nederland 2026 · Alle berekeningen zijn indicatief</p>
+  <p style="margin-top:.3rem;font-size:.75rem">
+    Niet bedoeld als juridisch of fiscaal advies
+  </p>
+</footer>
 </body>
 </html>
